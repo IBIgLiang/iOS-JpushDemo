@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC217EA52011C9B000D42010 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217EA42011C9B000D42010 /* AppDelegate.m */; };
+		EC217EA82011C9B000D42010 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217EA72011C9B000D42010 /* ViewController.m */; };
+		EC217EAB2011C9B000D42010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC217EA92011C9B000D42010 /* Main.storyboard */; };
+		EC217EAD2011C9B000D42010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC217EAC2011C9B000D42010 /* Assets.xcassets */; };
+		EC217EB02011C9B000D42010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC217EAE2011C9B000D42010 /* LaunchScreen.storyboard */; };
+		EC217EB32011C9B000D42010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217EB22011C9B000D42010 /* main.m */; };
+		EC217EBD2011C9B000D42010 /* iOS_JpushDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217EBC2011C9B000D42010 /* iOS_JpushDemoTests.m */; };
+		EC217EC82011C9B000D42010 /* iOS_JpushDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217EC72011C9B000D42010 /* iOS_JpushDemoUITests.m */; };
+		EC217EDA2011D78C00D42010 /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217ED92011D78C00D42010 /* AppDelegate+Notification.m */; };
+		EC217EE32011ECA200D42010 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217EE22011ECA200D42010 /* NotificationService.m */; };
+		EC217EE72011ECA200D42010 /* iOS-JpushDemo_NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC217EDF2011ECA200D42010 /* iOS-JpushDemo_NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC217EF32012265E00D42010 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC217EF22012265E00D42010 /* UserNotifications.framework */; };
+		EC217EF52012265E00D42010 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC217EF42012265E00D42010 /* UserNotificationsUI.framework */; };
+		EC217EF92012265E00D42010 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC217EF82012265E00D42010 /* NotificationViewController.m */; };
+		EC217EFC2012265E00D42010 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC217EFA2012265E00D42010 /* MainInterface.storyboard */; };
+		EC217F002012265E00D42010 /* iOS-JpushDemo_NotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC217EF02012265E00D42010 /* iOS-JpushDemo_NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC217EB92011C9B000D42010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC217E982011C9B000D42010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC217E9F2011C9B000D42010;
+			remoteInfo = "iOS-JpushDemo";
+		};
+		EC217EC42011C9B000D42010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC217E982011C9B000D42010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC217E9F2011C9B000D42010;
+			remoteInfo = "iOS-JpushDemo";
+		};
+		EC217EE52011ECA200D42010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC217E982011C9B000D42010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC217EDE2011ECA200D42010;
+			remoteInfo = "iOS-JpushDemo_NotificationService";
+		};
+		EC217EFE2012265E00D42010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC217E982011C9B000D42010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC217EEF2012265E00D42010;
+			remoteInfo = "iOS-JpushDemo_NotificationContent";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC217EEB2011ECA200D42010 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC217EE72011ECA200D42010 /* iOS-JpushDemo_NotificationService.appex in Embed App Extensions */,
+				EC217F002012265E00D42010 /* iOS-JpushDemo_NotificationContent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC217EA02011C9B000D42010 /* iOS-JpushDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-JpushDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC217EA32011C9B000D42010 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC217EA42011C9B000D42010 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC217EA62011C9B000D42010 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC217EA72011C9B000D42010 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC217EAA2011C9B000D42010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC217EAC2011C9B000D42010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC217EAF2011C9B000D42010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC217EB12011C9B000D42010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC217EB22011C9B000D42010 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC217EB82011C9B000D42010 /* iOS-JpushDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-JpushDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC217EBC2011C9B000D42010 /* iOS_JpushDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_JpushDemoTests.m; sourceTree = "<group>"; };
+		EC217EBE2011C9B000D42010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC217EC32011C9B000D42010 /* iOS-JpushDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-JpushDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC217EC72011C9B000D42010 /* iOS_JpushDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_JpushDemoUITests.m; sourceTree = "<group>"; };
+		EC217EC92011C9B000D42010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC217ED82011D78C00D42010 /* AppDelegate+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notification.h"; sourceTree = "<group>"; };
+		EC217ED92011D78C00D42010 /* AppDelegate+Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notification.m"; sourceTree = "<group>"; };
+		EC217EDF2011ECA200D42010 /* iOS-JpushDemo_NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS-JpushDemo_NotificationService.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC217EE12011ECA200D42010 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		EC217EE22011ECA200D42010 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		EC217EE42011ECA200D42010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC217EF02012265E00D42010 /* iOS-JpushDemo_NotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS-JpushDemo_NotificationContent.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC217EF22012265E00D42010 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		EC217EF42012265E00D42010 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		EC217EF72012265E00D42010 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		EC217EF82012265E00D42010 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		EC217EFB2012265E00D42010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EC217EFD2012265E00D42010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC217E9D2011C9B000D42010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EB52011C9B000D42010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EC02011C9B000D42010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EDC2011ECA200D42010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EED2012265E00D42010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EF52012265E00D42010 /* UserNotificationsUI.framework in Frameworks */,
+				EC217EF32012265E00D42010 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC217E972011C9B000D42010 = {
+			isa = PBXGroup;
+			children = (
+				EC217EA22011C9B000D42010 /* iOS-JpushDemo */,
+				EC217EBB2011C9B000D42010 /* iOS-JpushDemoTests */,
+				EC217EC62011C9B000D42010 /* iOS-JpushDemoUITests */,
+				EC217EE02011ECA200D42010 /* iOS-JpushDemo_NotificationService */,
+				EC217EF62012265E00D42010 /* iOS-JpushDemo_NotificationContent */,
+				EC217EF12012265E00D42010 /* Frameworks */,
+				EC217EA12011C9B000D42010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC217EA12011C9B000D42010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC217EA02011C9B000D42010 /* iOS-JpushDemo.app */,
+				EC217EB82011C9B000D42010 /* iOS-JpushDemoTests.xctest */,
+				EC217EC32011C9B000D42010 /* iOS-JpushDemoUITests.xctest */,
+				EC217EDF2011ECA200D42010 /* iOS-JpushDemo_NotificationService.appex */,
+				EC217EF02012265E00D42010 /* iOS-JpushDemo_NotificationContent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC217EA22011C9B000D42010 /* iOS-JpushDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC217EA32011C9B000D42010 /* AppDelegate.h */,
+				EC217EA42011C9B000D42010 /* AppDelegate.m */,
+				EC217EA62011C9B000D42010 /* ViewController.h */,
+				EC217EA72011C9B000D42010 /* ViewController.m */,
+				EC217EA92011C9B000D42010 /* Main.storyboard */,
+				EC217EAC2011C9B000D42010 /* Assets.xcassets */,
+				EC217EAE2011C9B000D42010 /* LaunchScreen.storyboard */,
+				EC217EB12011C9B000D42010 /* Info.plist */,
+				EC217EB22011C9B000D42010 /* main.m */,
+				EC217ED82011D78C00D42010 /* AppDelegate+Notification.h */,
+				EC217ED92011D78C00D42010 /* AppDelegate+Notification.m */,
+			);
+			path = "iOS-JpushDemo";
+			sourceTree = "<group>";
+		};
+		EC217EBB2011C9B000D42010 /* iOS-JpushDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC217EBC2011C9B000D42010 /* iOS_JpushDemoTests.m */,
+				EC217EBE2011C9B000D42010 /* Info.plist */,
+			);
+			path = "iOS-JpushDemoTests";
+			sourceTree = "<group>";
+		};
+		EC217EC62011C9B000D42010 /* iOS-JpushDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC217EC72011C9B000D42010 /* iOS_JpushDemoUITests.m */,
+				EC217EC92011C9B000D42010 /* Info.plist */,
+			);
+			path = "iOS-JpushDemoUITests";
+			sourceTree = "<group>";
+		};
+		EC217EE02011ECA200D42010 /* iOS-JpushDemo_NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				EC217EE12011ECA200D42010 /* NotificationService.h */,
+				EC217EE22011ECA200D42010 /* NotificationService.m */,
+				EC217EE42011ECA200D42010 /* Info.plist */,
+			);
+			path = "iOS-JpushDemo_NotificationService";
+			sourceTree = "<group>";
+		};
+		EC217EF12012265E00D42010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC217EF22012265E00D42010 /* UserNotifications.framework */,
+				EC217EF42012265E00D42010 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC217EF62012265E00D42010 /* iOS-JpushDemo_NotificationContent */ = {
+			isa = PBXGroup;
+			children = (
+				EC217EF72012265E00D42010 /* NotificationViewController.h */,
+				EC217EF82012265E00D42010 /* NotificationViewController.m */,
+				EC217EFA2012265E00D42010 /* MainInterface.storyboard */,
+				EC217EFD2012265E00D42010 /* Info.plist */,
+			);
+			path = "iOS-JpushDemo_NotificationContent";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC217E9F2011C9B000D42010 /* iOS-JpushDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC217ECC2011C9B000D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemo" */;
+			buildPhases = (
+				EC217E9C2011C9B000D42010 /* Sources */,
+				EC217E9D2011C9B000D42010 /* Frameworks */,
+				EC217E9E2011C9B000D42010 /* Resources */,
+				EC217EEB2011ECA200D42010 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC217EE62011ECA200D42010 /* PBXTargetDependency */,
+				EC217EFF2012265E00D42010 /* PBXTargetDependency */,
+			);
+			name = "iOS-JpushDemo";
+			productName = "iOS-JpushDemo";
+			productReference = EC217EA02011C9B000D42010 /* iOS-JpushDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC217EB72011C9B000D42010 /* iOS-JpushDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC217ECF2011C9B000D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemoTests" */;
+			buildPhases = (
+				EC217EB42011C9B000D42010 /* Sources */,
+				EC217EB52011C9B000D42010 /* Frameworks */,
+				EC217EB62011C9B000D42010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC217EBA2011C9B000D42010 /* PBXTargetDependency */,
+			);
+			name = "iOS-JpushDemoTests";
+			productName = "iOS-JpushDemoTests";
+			productReference = EC217EB82011C9B000D42010 /* iOS-JpushDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC217EC22011C9B000D42010 /* iOS-JpushDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC217ED22011C9B000D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemoUITests" */;
+			buildPhases = (
+				EC217EBF2011C9B000D42010 /* Sources */,
+				EC217EC02011C9B000D42010 /* Frameworks */,
+				EC217EC12011C9B000D42010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC217EC52011C9B000D42010 /* PBXTargetDependency */,
+			);
+			name = "iOS-JpushDemoUITests";
+			productName = "iOS-JpushDemoUITests";
+			productReference = EC217EC32011C9B000D42010 /* iOS-JpushDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EC217EDE2011ECA200D42010 /* iOS-JpushDemo_NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC217EE82011ECA200D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemo_NotificationService" */;
+			buildPhases = (
+				EC217EDB2011ECA200D42010 /* Sources */,
+				EC217EDC2011ECA200D42010 /* Frameworks */,
+				EC217EDD2011ECA200D42010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-JpushDemo_NotificationService";
+			productName = "iOS-JpushDemo_NotificationService";
+			productReference = EC217EDF2011ECA200D42010 /* iOS-JpushDemo_NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EC217EEF2012265E00D42010 /* iOS-JpushDemo_NotificationContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC217F012012265E00D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemo_NotificationContent" */;
+			buildPhases = (
+				EC217EEC2012265E00D42010 /* Sources */,
+				EC217EED2012265E00D42010 /* Frameworks */,
+				EC217EEE2012265E00D42010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-JpushDemo_NotificationContent";
+			productName = "iOS-JpushDemo_NotificationContent";
+			productReference = EC217EF02012265E00D42010 /* iOS-JpushDemo_NotificationContent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC217E982011C9B000D42010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = zhangzhiliang;
+				TargetAttributes = {
+					EC217E9F2011C9B000D42010 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EC217EB72011C9B000D42010 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC217E9F2011C9B000D42010;
+					};
+					EC217EC22011C9B000D42010 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC217E9F2011C9B000D42010;
+					};
+					EC217EDE2011ECA200D42010 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EC217EEF2012265E00D42010 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EC217E9B2011C9B000D42010 /* Build configuration list for PBXProject "iOS-JpushDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC217E972011C9B000D42010;
+			productRefGroup = EC217EA12011C9B000D42010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC217E9F2011C9B000D42010 /* iOS-JpushDemo */,
+				EC217EB72011C9B000D42010 /* iOS-JpushDemoTests */,
+				EC217EC22011C9B000D42010 /* iOS-JpushDemoUITests */,
+				EC217EDE2011ECA200D42010 /* iOS-JpushDemo_NotificationService */,
+				EC217EEF2012265E00D42010 /* iOS-JpushDemo_NotificationContent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC217E9E2011C9B000D42010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EB02011C9B000D42010 /* LaunchScreen.storyboard in Resources */,
+				EC217EAD2011C9B000D42010 /* Assets.xcassets in Resources */,
+				EC217EAB2011C9B000D42010 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EB62011C9B000D42010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EC12011C9B000D42010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EDD2011ECA200D42010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EEE2012265E00D42010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EFC2012265E00D42010 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC217E9C2011C9B000D42010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EA82011C9B000D42010 /* ViewController.m in Sources */,
+				EC217EDA2011D78C00D42010 /* AppDelegate+Notification.m in Sources */,
+				EC217EB32011C9B000D42010 /* main.m in Sources */,
+				EC217EA52011C9B000D42010 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EB42011C9B000D42010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EBD2011C9B000D42010 /* iOS_JpushDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EBF2011C9B000D42010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EC82011C9B000D42010 /* iOS_JpushDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EDB2011ECA200D42010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EE32011ECA200D42010 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC217EEC2012265E00D42010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC217EF92012265E00D42010 /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC217EBA2011C9B000D42010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC217E9F2011C9B000D42010 /* iOS-JpushDemo */;
+			targetProxy = EC217EB92011C9B000D42010 /* PBXContainerItemProxy */;
+		};
+		EC217EC52011C9B000D42010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC217E9F2011C9B000D42010 /* iOS-JpushDemo */;
+			targetProxy = EC217EC42011C9B000D42010 /* PBXContainerItemProxy */;
+		};
+		EC217EE62011ECA200D42010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC217EDE2011ECA200D42010 /* iOS-JpushDemo_NotificationService */;
+			targetProxy = EC217EE52011ECA200D42010 /* PBXContainerItemProxy */;
+		};
+		EC217EFF2012265E00D42010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC217EEF2012265E00D42010 /* iOS-JpushDemo_NotificationContent */;
+			targetProxy = EC217EFE2012265E00D42010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC217EA92011C9B000D42010 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC217EAA2011C9B000D42010 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC217EAE2011C9B000D42010 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC217EAF2011C9B000D42010 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EC217EFA2012265E00D42010 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC217EFB2012265E00D42010 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC217ECA2011C9B000D42010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC217ECB2011C9B000D42010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC217ECD2011C9B000D42010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY267KZ723;
+				INFOPLIST_FILE = "iOS-JpushDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC217ECE2011C9B000D42010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY267KZ723;
+				INFOPLIST_FILE = "iOS-JpushDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC217ED02011C9B000D42010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-JpushDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-JpushDemo.app/iOS-JpushDemo";
+			};
+			name = Debug;
+		};
+		EC217ED12011C9B000D42010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-JpushDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-JpushDemo.app/iOS-JpushDemo";
+			};
+			name = Release;
+		};
+		EC217ED32011C9B000D42010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-JpushDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-JpushDemo";
+			};
+			name = Debug;
+		};
+		EC217ED42011C9B000D42010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-JpushDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-JpushDemo";
+			};
+			name = Release;
+		};
+		EC217EE92011ECA200D42010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY267KZ723;
+				INFOPLIST_FILE = "iOS-JpushDemo_NotificationService/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemo.iOS-JpushDemo-NotificationService";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC217EEA2011ECA200D42010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY267KZ723;
+				INFOPLIST_FILE = "iOS-JpushDemo_NotificationService/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemo.iOS-JpushDemo-NotificationService";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC217F022012265E00D42010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY267KZ723;
+				INFOPLIST_FILE = "iOS-JpushDemo_NotificationContent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemo.iOS-JpushDemo-NotificationContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC217F032012265E00D42010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY267KZ723;
+				INFOPLIST_FILE = "iOS-JpushDemo_NotificationContent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "difire.iOS-JpushDemo.iOS-JpushDemo-NotificationContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC217E9B2011C9B000D42010 /* Build configuration list for PBXProject "iOS-JpushDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC217ECA2011C9B000D42010 /* Debug */,
+				EC217ECB2011C9B000D42010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC217ECC2011C9B000D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC217ECD2011C9B000D42010 /* Debug */,
+				EC217ECE2011C9B000D42010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC217ECF2011C9B000D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC217ED02011C9B000D42010 /* Debug */,
+				EC217ED12011C9B000D42010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC217ED22011C9B000D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC217ED32011C9B000D42010 /* Debug */,
+				EC217ED42011C9B000D42010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC217EE82011ECA200D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemo_NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC217EE92011ECA200D42010 /* Debug */,
+				EC217EEA2011ECA200D42010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC217F012012265E00D42010 /* Build configuration list for PBXNativeTarget "iOS-JpushDemo_NotificationContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC217F022012265E00D42010 /* Debug */,
+				EC217F032012265E00D42010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC217E982011C9B000D42010 /* Project object */;
+}
