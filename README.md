@@ -1,0 +1,56 @@
+# iOS-JpushDemo
+用极光推送到APP
+因为没有具体APP的推送证书，没法进行Jpush消息推送测试，所以此Demo暂时编写了iOS 10本地消息推送机制。
+主流程：注册推送--->编写Content--->制定Triggers--->添加Request--->推送本地消息
+以iOS 10为主：
+第一步注册推送：
+UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+center.delegate = self;
+[center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+if (!error) {
+        NSLog(@"register success");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[UIApplication sharedApplication] registerForRemoteNotifications];
+        });
+    }
+}];
+
+第二步编写Content：
+UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+content.title = @"Jpush本地推送测试";
+content.subtitle = @"BG-666";
+content.body = @"你成功了吗？";
+content.badge = @1;
+content.categoryIdentifier = JPUSH_CATEGORY_IDENTIFIER;
+
+第三步制定Triggers：
+/**
+Triggers:包括三种：
+UNTimeIntervalNotificationTrigger： 设置一段时间后提醒，可以重复提醒
+UNCalendarNotificationTrigger：按日历提醒，例如每周几 几点 提醒
+UNLocationNotificationTrigger：按地点提醒
+*/
+UNTimeIntervalNotificationTrigger *trigger1 = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5 repeats:NO];
+
+第四步添加Request：
+NSString *requestIdentifier = @"sampleRequest";
+UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:requestIdentifier content:content trigger:trigger1];
+
+第五步推送本地消息：
+[center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        } else {
+            NSLog(@"ok");
+        }
+    }];
+到此为止，本地消息推送完成。
+
+其他功能：
+Notification Management
+Notification Actions
+Response handling
+Service Extension
+Media Attachments
+Notification Content
+参考文章（此文章十分详细）：https://www.jianshu.com/p/f57e2045f711

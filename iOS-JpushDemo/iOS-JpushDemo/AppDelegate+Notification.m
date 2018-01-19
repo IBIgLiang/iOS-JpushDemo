@@ -23,12 +23,9 @@
 
 - (void)registerJpushWithApplication:(UIApplication *)application {
     if (@available(iOS 10.0, *)) {
+        //注册推送
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         center.delegate = self;
-        UNNotificationAction *action = [UNNotificationAction actionWithIdentifier:JPUSH_ACTION_IDENTIFIER title:@"回复" options:UNNotificationActionOptionNone];
-        UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:JPUSH_CATEGORY_IDENTIFIER actions:@[action] intentIdentifiers:@[] options:UNNotificationCategoryOptionNone];
-        [center setNotificationCategories:[NSSet setWithArray:@[category]]];
-        
         [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert) completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (!error) {
                 NSLog(@"register success");
@@ -38,6 +35,10 @@
             }
             
         }];
+        
+        UNNotificationAction *action = [UNNotificationAction actionWithIdentifier:JPUSH_ACTION_IDENTIFIER title:@"回复" options:UNNotificationActionOptionNone];
+        UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:JPUSH_CATEGORY_IDENTIFIER actions:@[action] intentIdentifiers:@[] options:UNNotificationCategoryOptionNone];
+        [center setNotificationCategories:[NSSet setWithArray:@[category]]];
         //本地推送测试
         [self jpushLocalNotificationTestWithCenter:center];
     } else {
